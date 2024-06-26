@@ -3,10 +3,14 @@
   --main-color:#FFF13A;
   --curve: 40;
 }
+html{
+ scroll-behavior:smooth;
+}
 
 *{
  margin: 0;
  position: relative;
+ 
 }
 body{
  background: #121212;
