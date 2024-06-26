@@ -32,6 +32,8 @@ body{
 
 /*nav bar */
 #navbar{
+ position: fixed;
+ z-index: 100000;
  display: flex;
  background: var(--main-color);
  width: 100%;
@@ -52,6 +54,13 @@ body{
  height:80px;
 }
 
+a:hover{
+   transform: scale(1.2)
+}
+a{
+ transition: transform 0.4s ;
+}
+
 /* profile section */
 
 #topSection{
@@ -59,7 +68,9 @@ body{
  padding: 50px 0;
  justify-content: space-around;
 }
-
+#profilePic,#greetings{
+ margin-top: 100px;
+}
 #profilePic img{
  height: 200px;
  width: 200px;
@@ -257,13 +268,21 @@ body{
  width: 100%;
  
 }
+
+#ConnectSection a:hover{
+ font-weight: bolder;
+ transform: scale(1)
+}
+
 #ConnectSection a{
  text-decoration: none;
  color: white;
  display: block;
  margin:5px; 
- font-size: 20px
+ font-size: 20px;
+ transition: font-weight 0.5s;
 }
+
 #contactDetail a img{
  display: inline-block;
  height:25px;
@@ -311,6 +330,7 @@ body{
  padding: 50px 0;
 }
 #profilePic{
+ margin-top: 50px;
  text-align: center;
 }
 #profilePic img{
@@ -322,10 +342,13 @@ body{
  font-size: 20px;
  margin-top: 10px;
 }
-#greetings pre {
+#greetings{
+ margin-top: auto;
+}
+#greetings pre{
  margin-top: 30px;
  text-align: center;
- font-size: 50px;
+ font-size: 56px;
 }
 
 /* Who am i*/
