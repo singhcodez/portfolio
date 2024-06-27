@@ -30,6 +30,7 @@ body{
  color: var(--main-color) ;
 }
 
+
 /*nav bar */
 #navbar{
  position: fixed;
@@ -54,10 +55,10 @@ body{
  height:80px;
 }
 
-a:hover{
-   transform: scale(1.2)
+.navElements:hover{
+   transform: scale(1.3)
 }
-a{
+.navElements{
  transition: transform 0.4s ;
 }
 
@@ -310,6 +311,12 @@ a{
 @media screen and (max-width:360px){
    
    /*navbar*/
+   /* used in main.js nav bar transition*/
+   #navElm{
+ transform:scale(1.3)
+}
+   
+   /*-------------------*/
    #navbar{
     padding:2px 0;
  }
