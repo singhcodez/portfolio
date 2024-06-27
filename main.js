@@ -15,7 +15,7 @@ function myFunction() {
   let navElmCheck=(a)=>{
    for (let i = 0; i < navElements.length; i++) {
     if(i==a){
-    navElements.item(i).id+="navElm"
+    navElements.item(i).id="navElm"
     }
      
      else{
