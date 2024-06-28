@@ -19,7 +19,7 @@ function myFunction() {
     }
      
      else{
-          navElements.item(i).removeAttribute("id","navElm")
+          navElements.item(i).id="";
         }
       }
   }
