@@ -1,3 +1,13 @@
+//loader 
+console.log(1)
+setTimeout(loadEnd,2500)
+function loadEnd(){
+    document.getElementById("loaderSec").style.display="none"
+    document.getElementById("container").style.display="block"
+}
+
+
+
 
 window.onscroll = function() {myFunction()};
 
