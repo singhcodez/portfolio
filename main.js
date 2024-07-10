@@ -1,6 +1,5 @@
 //loader 
-console.log(1)
-setTimeout(loadEnd,2500)
+setTimeout(loadEnd,250)
 function loadEnd(){
     document.getElementById("loaderSec").style.display="none"
     document.getElementById("container").style.display="block"
