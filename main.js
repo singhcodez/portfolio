@@ -31,6 +31,7 @@ function myFunction() {
           navElements.item(i).id="";
         }
       }
+      
   }
   
 // check the scrolling & then do changes on nav elements 
@@ -76,7 +77,7 @@ if(scrolling>650){
    projects.style="opacity:1"
   }
 
-if(scrolling>2900){
+if(scrolling>2700){
    let connectWithMe=document.getElementById("connectWithMe")
    connectWithMe.className="moveUp"
    connectWithMe.style="opacity:1"

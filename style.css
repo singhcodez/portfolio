@@ -20,7 +20,7 @@ body{
 
 #container{
  display:none;
- background:#121212;
+ background:#080808;
  height: 100%;
  color: white;
  margin: 0;
@@ -60,6 +60,9 @@ body{
 .navElements:hover{
    transform: scale(1.3)
 }
+navElements:active{
+   transform: scale(1.3)
+}
 .navElements{
  transition: transform 0.4s ;
 }
@@ -82,6 +85,7 @@ body{
  object-fit:cover;
  object-position: 0px 0px ;
  zoom: 110%;
+ box-shadow: 2px 2px 5px var(--main-color), -2px -2px 5px var(--main-color);
 }
 #profilePic p{
  font-size: 25px;
@@ -94,7 +98,7 @@ body{
 
 /* about me ( who am i l */
 #aboutMe{
- background-color: #151515;
+ background-color: #090909;
 }
 #AboutSection{
  
@@ -106,6 +110,7 @@ body{
  margin-right: 10px;
  border: 2px solid var(--main-color);
  border-radius: 20px;
+ box-shadow: -3px -3px 7px var(--main-color);
  
 }
 #AboutSection p{
@@ -143,17 +148,18 @@ body{
 /* projects */
  #projects{
   margin-top: 40px;
+  background:#060606;
  }
  #projects h2{
-  margin:40px auto 0px 20px;
-  font-size: 30px;
+  margin:10px auto 0px 20px;
+  font-size: 1.5em;
  }
  /*mini projects*/
  #miniProjects{
   display: grid;
   grid-template-columns:auto auto auto auto;
   justify-content: space-evenly;
-  margin:50px auto;
+  margin:25px auto;
  }
  
  .miniItem{
@@ -167,6 +173,23 @@ body{
    width:80px;
    height: 80px;
  }
+ 
+ 
+  .miniItem:nth-child(1n):hover{
+  box-shadow: -2px 2px 6px dodgerblue,2px -2px 6px darkorange;
+}
+.miniItem:nth-child(2n):hover {
+  box-shadow: -2px 2px 6px orangered,2px -2px 6px blue;
+}
+.miniItem:nth-child(3n):hover  {
+  box-shadow: -2px 2px 6px blue,2px -2px 6px #FFE909;
+}
+.miniItem:nth-child(4n):hover {
+  box-shadow:  2px 2px 6px #FFBC06,-2px -2px 6px #FFE909;
+}
+
+
+ 
  .miniItem img{
   width:100%;
  }
@@ -320,7 +343,7 @@ body{
 /*connect with me */
 #connectWithMe{
  border-top: 1px solid #797A8D;
-  background-color: #181818;
+  background-color: #101010;
   padding-bottom:40px;
 }
 #ConnectSection{
@@ -477,7 +500,6 @@ body{
  width:55px;
 height:55px;
 padding:8px;
-font-size: auto;
 }
 .miniItem img{
  width:100%;
@@ -635,8 +657,8 @@ to{
         transform: rotateZ(45deg);
         perspective: 900px;
         border-radius: 50%;
-        width: 150px;
-        height: 150px;
+        width: 170px;
+        height: 170px;
         color: #fff;
       }
         .loader:before,
@@ -653,7 +675,7 @@ to{
           animation: 1s spin linear infinite;
         }
         .loader:after {
-          color: #FFF13A;
+          color: var(--main-color);
           transform: rotateY(70deg);
           animation-delay: .4s;
         }
