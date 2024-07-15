@@ -390,13 +390,19 @@ navElements:active{
 }
 #socialMedia section{
  text-align: center;
-  display: flex;
+  display: grid;
   width: 100%;
+  grid-template-columns: auto auto auto;
   justify-content: space-evenly;
 }
 #socialMedia a img{
  height:70px;
+ filter:grayscale(80%);
 
+}
+#socialMedia a img:hover{
+ filter:grayscale(0%);
+ filter:contrast(120%);
 }
 
 
