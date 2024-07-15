@@ -42,7 +42,7 @@ function myFunction() {
   else if (scrolling>=700 && scrolling<1700) {
       navElmCheck(1);
 }
- else if (scrolling>=1700 && scrolling<2900) {
+ else if (scrolling>=1700 && scrolling<2600) {
       navElmCheck(2);
 }
 else{
